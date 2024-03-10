@@ -1,6 +1,5 @@
 "use client"
 
-import styles from "./page.module.css";
 import { ConnectKitButton } from "connectkit";
 import { useAccount } from 'wagmi';
 import { loadKeys,storeKeys } from "./XMTPHelpers";
