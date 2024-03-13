@@ -1,5 +1,4 @@
 "use client";
-
 import { ConnectKitButton } from "connectkit";
 import { useAccount } from "wagmi";
 import { loadKeys, storeKeys } from "./XMTPHelpers";
@@ -7,7 +6,7 @@ import { useCallback } from "react";
 import { useClient, Client } from "@xmtp/react-sdk";
 import { useWalletClient } from "wagmi";
 
-export default function Home() {
+export default function DynamicPage() {
   const { isConnected, address, connector } = useAccount();
   const { initialize } = useClient();
   const { data: walletClient } = useWalletClient();
