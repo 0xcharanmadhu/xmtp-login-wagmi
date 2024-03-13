@@ -28,19 +28,14 @@ const config = createConfig(
       celo,
       polygonMumbai,
     ],
-    walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!,
     appDescription: "tempApp",
     appUrl: "https://tempApp.io",
   })
 );
 
-type LayoutConfigProp = {
-  children: React.ReactNode;
-};
-
 const queryClient = new QueryClient();
 
-export default function LayoutConfig({ children }: LayoutConfigProp) {
+export default function LayoutConfig({ children }) {
   return (
     <>
       <WagmiProvider config={config}>
