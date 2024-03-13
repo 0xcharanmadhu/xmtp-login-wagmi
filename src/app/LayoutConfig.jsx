@@ -29,6 +29,7 @@ const config = createConfig(
       polygonMumbai,
     ],
     appDescription: "tempApp",
+    walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID,
     appUrl: "https://tempApp.io",
   })
 );
